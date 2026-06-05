@@ -12,7 +12,7 @@ int main() {
     struct Bitfield a;
 
     // 2. Assignment
-    a.firstbit = 2;      // Setting the 1st bit
+    a.firstbit = 1;      // Setting the 1st bit
     a.middlebits = 5;    // Binary 101
     a.lastbits = 10;     // Binary 1010
 

@@ -15,7 +15,8 @@ union decision {
 };
 
 // Function to simulate user input
-union decision input() {
+union decision input() 
+{
     union decision d;
     d.flags = 0; // Initialize all bits to 0
 

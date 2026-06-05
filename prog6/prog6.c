@@ -12,12 +12,15 @@ typedef struct {
 } ScreenBuffer;
 
 // 1. Initializes the buffer with blank spaces
-void initBuffer(ScreenBuffer *buffer) {
+void initBuffer(ScreenBuffer *buffer) 
+{
     buffer->width = WIDTH;
     buffer->height = HEIGHT;
     
-    for (int y = 0; y < HEIGHT; y++) {
-        for (int x = 0; x < WIDTH; x++) {
+    for (int y = 0; y < HEIGHT; y++) 
+    {
+        for (int x = 0; x < WIDTH; x++) 
+        {
             buffer->grid[y][x] = ' ';
         }
     }

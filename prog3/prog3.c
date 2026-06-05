@@ -2,8 +2,10 @@
 
 
  
-void printBits(int n) {
-    for (int i = 31; i >= 0; i--) {
+void printBits(int n) 
+{
+    for (int i = 31; i >= 0; i--) 
+    {
         int bit = (n >> i) & 1;
         printf("%d", bit);
         if (i % 8 == 0) printf(" "); // Formatting: space between bytes
@@ -11,10 +13,12 @@ void printBits(int n) {
 }
 
 
-int countSetBits(int n) {
+int countSetBits(int n) 
+{
     int count = 0;
     unsigned int un = (unsigned int)n; // Cast to unsigned to handle negatives safely
-    while (un != 0) {
+    while (un != 0) 
+    {
         un &= (un - 1);
         count++;
     }
