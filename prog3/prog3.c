@@ -2,8 +2,7 @@
 
 
  
-void printBits(int n) 
-{
+void printBits(int n) {
     for (int i = 31; i >= 0; i--) 
     {
         int bit = (n >> i) & 1;
@@ -13,8 +12,7 @@ void printBits(int n)
 }
 
 
-int countSetBits(int n) 
-{
+int countSetBits(int n) {
     int count = 0;
     unsigned int un = (unsigned int)n; // Cast to unsigned to handle negatives safely
     while (un != 0) 
